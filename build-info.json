@@ -2,13 +2,13 @@
   "files": {
     "index.html": "6b5cf8d5ef398ba923843b615be851d6e3b5117f4bdf2f0c6ab09f5378398b96",
     "loader.bundle.js": "8f9fe32fae87cc7ee04bdfb44752d66bad3ecf45fee319383338768ae591ef45",
-    "recovery.bundle.js": "611e96761096df6c2572c8d2bff5796b4803add190c0ad83c32e748744652e8a",
+    "recovery.bundle.js": "6f275bbd26134d5a22c2d0ad1662df73e1528dc505c8f654cb221f1029c5534f",
     "recovery.html": "6b3355bca009c43561574f497df5e4772154facb40866714e70d3e792e0f8e9f",
     "sw.js": "7ae46c99124fa3711ae2f15b30f5081503596a73962c83172995c754accf7c2e"
   },
   "vendor": {
     "count": 54,
-    "digest": "60682791e96b690340b33ee541b219100bc1ba030a7b015e0330c683a851add2",
+    "digest": "3f60aad1c57af1aeb2abf42cbcce15c0fd791298171465a098fccf1f721699f3",
     "files": {
       "src/utils/chainAgreement.js": "017f786b5de633dd200afca145c0e5dfde2d321b72fd828bc1e8e30704cfc8e8",
       "src/utils/chainClock.js": "802ea3c15b3f6efd4630a23578e44d9ce2770f1e87240874e800e7f6a4f5f43e",
@@ -22,7 +22,7 @@
       "src/utils/read-receipt-batching.js": "9c6158e6660cdb001ef1015a807738d39378cc60bfef9696cd69018ceec77685",
       "src/utils/read-receipt-pause.js": "5fb3af66d16a3e5e35e2a17050e4fb013d3fab7549a9b444745e4adf519ae87c",
       "src/utils/receipt-warnings.js": "99daf5746e3c3284e0afe4fe8e07d2a473a67e84a26032872b9c5f8920b1c204",
-      "src/utils/relay.js": "d57e7a50f9e2910a003b60b91b2cc8108e0268add2e145ecba6d14b23eb14ef5",
+      "src/utils/relay.js": "6809b449bbf4c1de1367e5ca4b0bf3f64f5d0a6972df6a5ab2ce415aca0ff882",
       "src/utils/reportGround.js": "d6bd987407e25c55be07c7dba99808d8f1460dba56f8c2a069fb56618016a938",
       "src/utils/submissionGuarantee.js": "de17bd5c67907c95bddcbf91a8c024e70bcf80e84cd4fb13c94ac4324c0aae93",
       "src/utils/trimGuaranteeCheck.js": "c81139cd32d42a2fe652cf7a85cef8372371a53da08316085299ef60816dca77",
@@ -68,7 +68,7 @@
   },
   "source": {
     "count": 22,
-    "digest": "4de250dd3f2d1ded6de41bfaa42b6ccd32e986ae02cf3987e575115cda8ad8e3",
+    "digest": "291dc4b9491d726a209366183f1d9e210f43b6a27d88bec26b26532ffcf0a83d",
     "files": {
       "common/bounded-fetch.js": "9c94351472fd39556653417928eeeb1479bda176e3b08643479b86fe3ac4fb4d",
       "common/buffer-polyfill.js": "b3d8e7224ea3a59193d3e85bff4ffbcca7b63594afc275d390f7796d82e53554",
@@ -80,7 +80,7 @@
       "loader/loader.js": "1b7657737407474bc55492e8e669cc8877b4af93ea57e0b7143b812ff5e14e22",
       "loader/sw.js": "7ae46c99124fa3711ae2f15b30f5081503596a73962c83172995c754accf7c2e",
       "loader/verify-core.js": "9e42e6daf577316ffa13f643308338ef298e1ad044ea0b3557badce6f883123a",
-      "recovery/app.js": "009544ca1fc289a0197470a050f45fe43d13cf0177a24a8b715147a96acd9229",
+      "recovery/app.js": "eb038d069eeabd959e3b6fbafda1787a68a5823c317778defd1bf7dc5a5e8416",
       "recovery/bundle.js": "b805bee38e7659953edc0ca9dce24aa446dab54d78b2701ac95a66f85da1642e",
       "recovery/discovery.js": "815a0e1da8fce62473df514d635feb035dbd6d1bce3fd0e7fed8a79e4e269df8",
       "recovery/identity.js": "6231940af265f9772d460020b9d53705c11f564a4a2dda8b2ab07749ec065756",
@@ -99,7 +99,7 @@
   },
   "bundleInputs": {
     "count": 1223,
-    "digest": "143cfc6b2b81d3852f343cbaaa02940e2a25165171d7c86ee770a2553597bc5a",
+    "digest": "efe8808d1d20f72fd943b7afd7fe1826e456ca18da0e17dc0bc5162546b34576",
     "files": {
       "config.js": "e74dd87c72bd9844104439f4396c80bddd25a7d676aeeea49c545782b954c517",
       "node_modules/@ecies/ciphers/dist/aes/noble.js": "8da860b73d6facdc22d051fefc83648d6adb0cc9756150deedb5458337b52ce6",
@@ -1261,7 +1261,7 @@
       "src/loader/app.js": "acb198d9eb449a59c3c4eed7fc4a572e964461660f593dfafb05617b466251d0",
       "src/loader/loader.js": "1b7657737407474bc55492e8e669cc8877b4af93ea57e0b7143b812ff5e14e22",
       "src/loader/verify-core.js": "9e42e6daf577316ffa13f643308338ef298e1ad044ea0b3557badce6f883123a",
-      "src/recovery/app.js": "009544ca1fc289a0197470a050f45fe43d13cf0177a24a8b715147a96acd9229",
+      "src/recovery/app.js": "eb038d069eeabd959e3b6fbafda1787a68a5823c317778defd1bf7dc5a5e8416",
       "src/recovery/bundle.js": "b805bee38e7659953edc0ca9dce24aa446dab54d78b2701ac95a66f85da1642e",
       "src/recovery/discovery.js": "815a0e1da8fce62473df514d635feb035dbd6d1bce3fd0e7fed8a79e4e269df8",
       "src/recovery/identity.js": "6231940af265f9772d460020b9d53705c11f564a4a2dda8b2ab07749ec065756",
@@ -1284,7 +1284,7 @@
       "vendor/src/utils/read-receipt-batching.js": "9c6158e6660cdb001ef1015a807738d39378cc60bfef9696cd69018ceec77685",
       "vendor/src/utils/read-receipt-pause.js": "5fb3af66d16a3e5e35e2a17050e4fb013d3fab7549a9b444745e4adf519ae87c",
       "vendor/src/utils/receipt-warnings.js": "99daf5746e3c3284e0afe4fe8e07d2a473a67e84a26032872b9c5f8920b1c204",
-      "vendor/src/utils/relay.js": "d57e7a50f9e2910a003b60b91b2cc8108e0268add2e145ecba6d14b23eb14ef5",
+      "vendor/src/utils/relay.js": "6809b449bbf4c1de1367e5ca4b0bf3f64f5d0a6972df6a5ab2ce415aca0ff882",
       "vendor/src/utils/reportGround.js": "d6bd987407e25c55be07c7dba99808d8f1460dba56f8c2a069fb56618016a938",
       "vendor/src/utils/submissionGuarantee.js": "de17bd5c67907c95bddcbf91a8c024e70bcf80e84cd4fb13c94ac4324c0aae93",
       "vendor/src/utils/trimGuaranteeCheck.js": "c81139cd32d42a2fe652cf7a85cef8372371a53da08316085299ef60816dca77",

@@ -60847,11 +60847,13 @@ ${detail}`
   init_secp256k1();
   var P2P_EVENT_KIND = 7742;
   var DEFAULT_RELAYS = [
-    "wss://relay.damus.io",
     "wss://nos.lol",
-    "wss://relay.nostr.band",
-    "wss://offchain.pub",
-    "wss://relay.primal.net"
+    "wss://relay.primal.net",
+    "wss://yabu.me",
+    "wss://relay.satlantis.io",
+    "wss://relay.angor.io",
+    "wss://purplerelay.com",
+    "wss://relay.ditto.pub"
   ];
   var QUIESCENCE_MS = Number("10000");
   var PER_PUBKEY_EVENT_CAP = 1200;
@@ -73491,7 +73493,7 @@ ${Math.round(plan.beforeBytes / 1024)}KB \u2192 ${Math.round(plan.afterBytes / 1
   function renderRelaySettings() {
     const area = $("relay-area");
     area.innerHTML = "";
-    const ta = el("textarea", { value: getRelayList().join("\n"), rows: 5 });
+    const ta = el("textarea", { value: getRelayList().join("\n"), rows: 8 });
     const btn = el("button", {
       textContent: state.tr("recovery.relay.save"),
       onclick: () => {
