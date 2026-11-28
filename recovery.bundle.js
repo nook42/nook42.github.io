@@ -18822,7 +18822,7 @@ ${prettyStateOverride(stateOverride)}`;
     "recovery.action.voteDescription": "You must vote for one member. The person you vote for receives Vote Pt equal to your Lock Pt.",
     "recovery.action.reportTitle": "Report Member",
     "recovery.action.reportDescription": "Report members you believe are AI/bots (up to 2). You can report someone after their vote is confirmed by a read receipt from a member other than you or that person. In the last 10 minutes, you can report anyone, but a report against someone without a confirmed vote is invalid.",
-    "recovery.action.voteConfirm": "You are voting for {name}. Once you vote, it cannot be changed. Are you sure?",
+    "recovery.action.voteConfirm": "You are voting for {name}. Once you vote, it cannot be changed. Even if your vote goes unread and becomes void, you cannot change who you vote for. Are you sure?",
     "recovery.action.voteSuccess": "Your vote has been submitted in an encrypted state.",
     "recovery.action.reportConfirm": "You are reporting {name}. Once you report, it cannot be changed. Are you sure?",
     "recovery.action.reportSuccess": "Your report has been submitted in an encrypted state.",
@@ -18868,6 +18868,7 @@ ${prettyStateOverride(stateOverride)}`;
     "recovery.chat.readBadge": "Read {count}",
     "recovery.chat.idleOverlay": "You have been idle for 10 minutes, so you are now offline. While offline, incoming messages will not be marked as read.",
     "recovery.chat.unreadBadge": "Unread",
+    "recovery.chat.voidBadge": "Void",
     "recovery.chat.bubbleVote": "Vote",
     "recovery.chat.bubbleReport": "Report (#{nth})",
     "recovery.action.voteResendConfirm": "Your previous vote was not received by anyone within 10 minutes and became void. Resend to the same member, {name}?",
@@ -19174,7 +19175,7 @@ ${prettyStateOverride(stateOverride)}`;
     "recovery.action.voteDescription": "\u5FC5\u305A\u30E1\u30F3\u30D0\u30FC1\u4EBA\u306B\u6295\u7968\u3057\u3066\u304F\u3060\u3055\u3044\u3002\u6295\u7968\u3055\u308C\u305F\u4EBA\u306B\u306F\u3042\u306A\u305F\u306E\u30ED\u30C3\u30AFPt\u3068\u540C\u984D\u306E\u6295\u7968Pt\u304C\u5165\u308A\u307E\u3059\u3002",
     "recovery.action.reportTitle": "\u30E1\u30F3\u30D0\u30FC\u3092\u5BC6\u544A",
     "recovery.action.reportDescription": "AI\u3084Bot\u3060\u3068\u601D\u3046\u30E1\u30F3\u30D0\u30FC\u304C\u3044\u305F\u3089\u5BC6\u544A\u3057\u307E\u3057\u3087\u3046\uFF08\u6700\u5927\uFF12\u540D\uFF09\u3002\u6295\u7968\u304C\u78BA\u5B9A\u3057\u305F\uFF08\u81EA\u5206\u3068\u76F8\u624B\u4EE5\u5916\u306E\u30E1\u30F3\u30D0\u30FC\u306E\u65E2\u8AAD\u304C\u3064\u3044\u305F\uFF09\u76F8\u624B\u306B\u3001\u305D\u306E\u6295\u7968\u306E\u5F8C\u3067\u5BC6\u544A\u3067\u304D\u307E\u3059\u3002\u30E9\u30B9\u30C810\u5206\u306F\u8AB0\u306B\u3067\u3082\u5BC6\u544A\u3067\u304D\u307E\u3059\u304C\u3001\u6295\u7968\u304C\u78BA\u5B9A\u3057\u3066\u3044\u306A\u3044\u76F8\u624B\u3078\u306E\u5BC6\u544A\u306F\u7121\u52B9\u3067\u3059\u3002",
-    "recovery.action.voteConfirm": "{name}\u306B\u6295\u7968\u3057\u307E\u3059\u3002\u4E00\u5EA6\u6295\u7968\u3059\u308B\u3068\u5909\u66F4\u3067\u304D\u307E\u305B\u3093\u3002\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F",
+    "recovery.action.voteConfirm": "{name}\u306B\u6295\u7968\u3057\u307E\u3059\u3002\u4E00\u5EA6\u6295\u7968\u3059\u308B\u3068\u5909\u66F4\u3067\u304D\u307E\u305B\u3093\u3002\u672A\u8AAD\u3067\u7121\u52B9\u306B\u306A\u3063\u305F\u3068\u3057\u3066\u3082\u3001\u6295\u7968\u5148\u3092\u5909\u66F4\u3059\u308B\u3053\u3068\u306F\u3067\u304D\u307E\u305B\u3093\u3002\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F",
     "recovery.action.voteSuccess": "\u6295\u7968\u3092\u6697\u53F7\u5316\u3055\u308C\u305F\u72B6\u614B\u3067\u63D0\u51FA\u3057\u307E\u3057\u305F\u3002",
     "recovery.action.reportConfirm": "{name}\u3092\u5BC6\u544A\u3057\u307E\u3059\u3002\u4E00\u5EA6\u5BC6\u544A\u3059\u308B\u3068\u5909\u66F4\u3067\u304D\u307E\u305B\u3093\u3002\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F",
     "recovery.action.reportSuccess": "\u5BC6\u544A\u3092\u6697\u53F7\u5316\u3055\u308C\u305F\u72B6\u614B\u3067\u63D0\u51FA\u3057\u307E\u3057\u305F\u3002",
@@ -19220,6 +19221,7 @@ ${prettyStateOverride(stateOverride)}`;
     "recovery.chat.readBadge": "\u65E2\u8AAD{count}",
     "recovery.chat.idleOverlay": "10\u5206\u9593\u3001\u64CD\u4F5C\u304C\u691C\u77E5\u3055\u308C\u306A\u304B\u3063\u305F\u305F\u3081\u30AA\u30D5\u30E9\u30A4\u30F3\u72B6\u614B\u3068\u306A\u308A\u307E\u3059\u3002\u3053\u306E\u72B6\u614B\u3067\u306F\u53D7\u4FE1\u3057\u305F\u30E1\u30C3\u30BB\u30FC\u30B8\u306B\u65E2\u8AAD\u306F\u3064\u3051\u307E\u305B\u3093\u3002",
     "recovery.chat.unreadBadge": "\u672A\u8AAD",
+    "recovery.chat.voidBadge": "\u7121\u52B9",
     "recovery.chat.bubbleVote": "\u6295\u7968",
     "recovery.chat.bubbleReport": "\u5BC6\u544A({nth}\u56DE\u76EE)",
     "recovery.action.voteResendConfirm": "\u524D\u56DE\u306E\u6295\u7968\u306F10\u5206\u9593\u8AB0\u306B\u3082\u53D7\u4FE1\u3055\u308C\u305A\u7121\u52B9\u306B\u306A\u308A\u307E\u3057\u305F\u3002\u540C\u3058\u76F8\u624B\u306E{name}\u306B\u518D\u9001\u3057\u307E\u3059\u304B\uFF1F",
@@ -19526,7 +19528,7 @@ ${prettyStateOverride(stateOverride)}`;
     "recovery.action.voteDescription": "\u5FC5\u987B\u4E3A\u4E00\u540D\u6210\u5458\u6295\u7968\u3002\u88AB\u6295\u7968\u8005\u5C06\u83B7\u5F97\u4E0E\u4F60\u7684\u8D28\u62BC\u70B9\u6570\u76F8\u540C\u7684\u6295\u7968\u70B9\u6570\u3002",
     "recovery.action.reportTitle": "\u4E3E\u62A5\u6210\u5458",
     "recovery.action.reportDescription": "\u5982\u679C\u6000\u7591\u67D0\u6210\u5458\u662F AI \u6216\u673A\u5668\u4EBA\uFF0C\u53EF\u4EE5\u4E3E\u62A5\uFF08\u6700\u591A 2 \u540D\uFF09\u3002\u76EE\u6807\u7684\u6295\u7968\u987B\u5F97\u5230\u4F60\u548C\u76EE\u6807\u4EE5\u5916\u6210\u5458\u7684\u5DF2\u8BFB\u56DE\u6267\uFF0C\u4E4B\u540E\u624D\u80FD\u4E3E\u62A5\u3002\u6700\u540E10\u5206\u949F\u53EF\u4E3E\u62A5\u4EFB\u4F55\u4EBA\uFF0C\u4F46\u76EE\u6807\u7684\u6295\u7968\u672A\u786E\u8BA4\u65F6\u4E3E\u62A5\u65E0\u6548\u3002",
-    "recovery.action.voteConfirm": "\u5C06\u6295\u7968\u7ED9{name}\u3002\u4E00\u65E6\u6295\u7968\u5C06\u65E0\u6CD5\u66F4\u6539\u3002\u786E\u5B9A\u5417\uFF1F",
+    "recovery.action.voteConfirm": "\u5C06\u6295\u7968\u7ED9{name}\u3002\u4E00\u65E6\u6295\u7968\u5C06\u65E0\u6CD5\u66F4\u6539\u3002\u5373\u4F7F\u56E0\u672A\u8BFB\u800C\u5931\u6548\uFF0C\u4E5F\u65E0\u6CD5\u66F4\u6539\u6295\u7968\u5BF9\u8C61\u3002\u786E\u5B9A\u5417\uFF1F",
     "recovery.action.voteSuccess": "\u6295\u7968\u5DF2\u4EE5\u52A0\u5BC6\u72B6\u6001\u63D0\u4EA4\u3002",
     "recovery.action.reportConfirm": "\u5C06\u4E3E\u62A5{name}\u3002\u4E00\u65E6\u4E3E\u62A5\u5C06\u65E0\u6CD5\u66F4\u6539\u3002\u786E\u5B9A\u5417\uFF1F",
     "recovery.action.reportSuccess": "\u4E3E\u62A5\u5DF2\u4EE5\u52A0\u5BC6\u72B6\u6001\u63D0\u4EA4\u3002",
@@ -19572,6 +19574,7 @@ ${prettyStateOverride(stateOverride)}`;
     "recovery.chat.readBadge": "\u5DF2\u8BFB{count}",
     "recovery.chat.idleOverlay": "\u7531\u4E8E10\u5206\u949F\u672A\u68C0\u6D4B\u5230\u64CD\u4F5C\uFF0C\u60A8\u5DF2\u8FDB\u5165\u79BB\u7EBF\u72B6\u6001\u3002\u5728\u6B64\u72B6\u6001\u4E0B\uFF0C\u6536\u5230\u7684\u6D88\u606F\u4E0D\u4F1A\u6807\u8BB0\u4E3A\u5DF2\u8BFB\u3002",
     "recovery.chat.unreadBadge": "\u672A\u8BFB",
+    "recovery.chat.voidBadge": "\u5DF2\u5931\u6548",
     "recovery.chat.bubbleVote": "\u6295\u7968",
     "recovery.chat.bubbleReport": "\u4E3E\u62A5\uFF08\u7B2C{nth}\u6B21\uFF09",
     "recovery.action.voteResendConfirm": "\u4F60\u4E0A\u4E00\u6B21\u7684\u6295\u7968\u572810\u5206\u949F\u5185\u672A\u88AB\u4EFB\u4F55\u4EBA\u63A5\u6536\uFF0C\u5DF2\u5931\u6548\u3002\u8981\u5411\u540C\u4E00\u6210\u5458{name}\u91CD\u65B0\u53D1\u9001\u5417\uFF1F",
@@ -37356,7 +37359,9 @@ ${bodyHash.toLowerCase()}`;
     "init_chat_games",
     "roster_anchor",
     "grouping_watchdog",
-    "phase_shard_update"
+    "phase_shard_update",
+    // 便 PLAYAT（2026-11-25）: 参加予定時刻を集める後追いの仕事。ゲームの無いブロックには渡す先が無い。
+    "availability_seed"
   ]);
   var RANDAO_ANCHOR_BLOCKHASH_WINDOW_DEFAULT = 256n;
   var ETHEREUM_BLOCK_TIME_MS = 12e3;
@@ -37448,6 +37453,22 @@ ${bodyHash.toLowerCase()}`;
   var calcRetryDelayMs = (failures) => Math.min(CALC_RETRY_BASE_MS * 2 ** Math.max(0, (failures || 1) - 1), CALC_RETRY_MAX_MS);
   var PHASE_TASK_MAX_ATTEMPTS = 20;
   var PHASE_TASK_RETRY_DELAY_MS = 9e4;
+  var AVAILABILITY_SEED_CHUNKS_PER_RUN = 20;
+  var AVAILABILITY_SEED_MAX_ATTEMPTS = 3;
+  var AVAILABILITY_SEED_ENQUEUE_DELAY_MS = 6e4;
+  var AVAILABILITY_SEED_CONTINUE_DELAY_MS = 1e3;
+  var AVAILABILITY_SEED_MAX_GROUP_CALLS_PER_RUN = 900;
+  var AVAILABILITY_SEED_RUN_BUDGET_MS = 2e4;
+  var AVAILABILITY_SEED_REARM_ALLOWANCE_MS = 5e3;
+  var AVAILABILITY_SEED_YIELD_DELAY_MS = 5e3;
+  var AVAILABILITY_SEED_MAX_DEFERRALS = 60;
+  var AVAILABILITY_SEED_YIELD_TO_TASK_TYPES = /* @__PURE__ */ new Set([
+    "phase_transition",
+    "roster_anchor",
+    "init_chat_games",
+    "grace_reconcile",
+    "grouping_watchdog"
+  ]);
   var GROUPING_LEASE_MS = 10 * 60 * 1e3;
   var GROUPING_MAX_ATTEMPTS = 20;
   function isPermanentGroupingShardError(message) {
@@ -42052,7 +42073,7 @@ GET /calc-status?block=${blockNum}`
             console.warn(
               `[timeline-no-game] skipping stale ${currentTask.type} task for block ${currentTask.blockNum} (cleanup=${noGameCleanup.status})`
             );
-            await this.storage.delete("phase_task_active");
+            if (currentTask.type !== "availability_seed") await this.storage.delete("phase_task_active");
             if (currentTask.type === "grouping_watchdog" || currentTask.type === "roster_anchor" || currentTask.type === "phase_shard_update") {
               tasksExecuted = maxContinuousExecution;
             }
@@ -42342,6 +42363,27 @@ GET /calc-status?block=${blockNum}`
               tasksExecuted = maxContinuousExecution;
               break;
             }
+            case "availability_seed": {
+              let seedIdle = false;
+              try {
+                const seedOutcome = await this.driveAvailabilitySeedTask(currentTask, {
+                  sharedInvocation: tasksExecuted > 1,
+                  queuedBehind: taskQueue
+                });
+                seedIdle = seedOutcome?.idle === true;
+              } catch (e) {
+                try {
+                  console.warn(`[availability-seed] block ${currentTask.blockNum}: dropped (${String(e?.message || e)})`);
+                } catch (logError) {
+                }
+              }
+              if (seedIdle) {
+                tasksExecuted--;
+                break;
+              }
+              tasksExecuted = maxContinuousExecution;
+              break;
+            }
             default:
               console.warn(`Unknown task type: ${currentTask.type}`);
           }
@@ -42410,6 +42452,262 @@ GET /calc-status?block=${blockNum}`
         await this.storage.put("phase_task_queue", q);
       }
       await this.armEarliestQueuedTask();
+    }
+    // ============================================================
+    // 便 PLAYAT（2026-11-25・ユーザー決定）: 参加予定時刻を集める後追いの仕事（availability_seed）
+    // エントリーの時・マイページで先に入れた参加予定時刻（users.entry_blocks[N].playAt）を、
+    // ChatGameDO の初期化の後で書き込みワーカーの読む口（/read-play-schedule）から集め、
+    // グループごとに ChatGameDO（/seed-availability）へ渡す。表示だけの値（署名なし・採点に無関係）。
+    // 🔴 この仕事の失敗で、グループ分け・ChatGameDO の初期化・名簿の登録・フェーズの遷移・集計を
+    //    1つも変えない。実行中の印・park・警報・保存の鍵を持たない（刻みの定数の所の説明を参照）。
+    // ============================================================
+    // initChatGames の成功の出口（初回と、全行 waiting での再入）から呼ぶ登録。投げない。
+    // 同じブロックの仕事がキューにあれば重ねて入れない（enqueuePhaseTask の決まり）。
+    // 何度登録されても、ChatGameDO は一度渡した uid・本人が触った uid に二度と入れないので害は無い。
+    async enqueueAvailabilitySeedBestEffort(blockNum) {
+      try {
+        await this.enqueuePhaseTask({
+          type: "availability_seed",
+          blockNum,
+          executeAt: Date.now() + AVAILABILITY_SEED_ENQUEUE_DELAY_MS,
+          cursor: 0,
+          attempts: 0
+        });
+      } catch (seedError) {
+        try {
+          console.warn(`[availability-seed] block ${blockNum}: enqueue failed (${String(seedError?.message || seedError)}) \u2014 chat init is unaffected`);
+        } catch (logError) {
+        }
+      }
+    }
+    // alarm の case から呼ぶ入口。1回ぶんを実行し、続き・やり直しの登録までを行う。
+    // 状態は仕事のオブジェクトの cursor（次に読むチャンク）・attempts（仕事そのものが投げた回数）・
+    // deferrals（走らずに後ろへ回した回数）だけ。どれも鎖の全体で持ち越す＝鎖は有限で終わる
+    // （走れば cursor が進むか attempts が増え、走らなければ deferrals が増える。3つとも上限がある）。
+    // 戻り値の idle:true は「fetch を1本も出していない」。alarm の case はその回の枠を返す。
+    async driveAvailabilitySeedTask(task, { sharedInvocation = false, queuedBehind = null } = {}) {
+      const rawBlockNum = task?.blockNum;
+      const blockNum = typeof rawBlockNum === "number" ? rawBlockNum : typeof rawBlockNum === "string" && /^\d{1,15}$/.test(rawBlockNum) ? Number(rawBlockNum) : Number.NaN;
+      if (!Number.isSafeInteger(blockNum) || blockNum < 0) {
+        console.warn(`[availability-seed] dropped: invalid block ${String(rawBlockNum)}`);
+        return { state: "dropped", reason: "invalid_block", idle: true };
+      }
+      const cursor = Number.isSafeInteger(task?.cursor) && task.cursor >= 0 ? task.cursor : 0;
+      const attempts = Number.isSafeInteger(task?.attempts) && task.attempts >= 0 ? task.attempts : 0;
+      const deferrals = Number.isSafeInteger(task?.deferrals) && task.deferrals >= 0 ? task.deferrals : 0;
+      const requeueAt = (fields, executeAt) => this.enqueuePhaseTask({
+        type: "availability_seed",
+        blockNum,
+        cursor,
+        attempts,
+        deferrals,
+        ...fields,
+        executeAt
+      });
+      const nowMs = Date.now();
+      let nextOtherAt = null;
+      for (const queued of Array.isArray(queuedBehind) ? queuedBehind : []) {
+        if (!queued || !AVAILABILITY_SEED_YIELD_TO_TASK_TYPES.has(queued.type)) continue;
+        const queuedAt = Number.isFinite(Number(queued.executeAt)) ? Number(queued.executeAt) : nowMs;
+        if (nextOtherAt === null || queuedAt < nextOtherAt) nextOtherAt = queuedAt;
+      }
+      const yieldToOther = nextOtherAt !== null && nextOtherAt <= nowMs + AVAILABILITY_SEED_RUN_BUDGET_MS + AVAILABILITY_SEED_REARM_ALLOWANCE_MS;
+      if (sharedInvocation || yieldToOther) {
+        const nextDeferrals = deferrals + 1;
+        if (nextDeferrals > AVAILABILITY_SEED_MAX_DEFERRALS) {
+          console.warn(`[availability-seed] block ${blockNum}: giving up at chunk ${cursor} after ${deferrals} deferrals (other tasks kept coming)`);
+          return { state: "gave_up", reason: "deferrals", idle: true, cursor, attempts, deferrals };
+        }
+        const executeAt = yieldToOther ? Math.max(nowMs, nextOtherAt) + AVAILABILITY_SEED_YIELD_DELAY_MS : nowMs + AVAILABILITY_SEED_CONTINUE_DELAY_MS;
+        await requeueAt({ deferrals: nextDeferrals }, executeAt);
+        return {
+          state: "deferred",
+          reason: yieldToOther ? "other_task_near" : "shared_invocation",
+          idle: true,
+          cursor,
+          attempts,
+          deferrals: nextDeferrals,
+          executeAt
+        };
+      }
+      let outcome;
+      try {
+        outcome = await this.runAvailabilitySeedTask({ blockNum, cursor });
+      } catch (e) {
+        const failedAttempts = attempts + 1;
+        const detail = this.availabilitySeedErrorText(e);
+        if (failedAttempts > AVAILABILITY_SEED_MAX_ATTEMPTS) {
+          console.warn(`[availability-seed] block ${blockNum}: giving up at chunk ${cursor} after ${failedAttempts} failed attempts: ${detail}`);
+          return { state: "gave_up", reason: "attempts", cursor, attempts: failedAttempts, deferrals };
+        }
+        console.warn(`[availability-seed] block ${blockNum}: failed at chunk ${cursor} (attempt ${failedAttempts}): ${detail} \u2014 retrying in ${PHASE_TASK_RETRY_DELAY_MS / 1e3}s`);
+        await requeueAt({ attempts: failedAttempts }, Date.now() + PHASE_TASK_RETRY_DELAY_MS);
+        return { state: "retry", cursor, attempts: failedAttempts, deferrals };
+      }
+      const line = `[availability-seed] block ${blockNum}: chunks ${cursor}-${outcome.nextCursor}/${outcome.totalChunks} read=${outcome.chunksRead} readFailed=${outcome.chunkFailures} partial=${outcome.partialChunks} values=${outcome.values} rejected=${outcome.rejectedValues} groups=${outcome.groupsSent} groupFailed=${outcome.groupFailures} groupSkipped=${outcome.groupsSkipped} applied=${outcome.applied} done=${outcome.done}`;
+      if (outcome.chunkFailures > 0 || outcome.groupFailures > 0 || outcome.groupsSkipped > 0) {
+        console.warn(`${line} firstFailure=${outcome.firstFailure || "none"}`);
+      } else {
+        console.log(line);
+      }
+      if (!outcome.done) {
+        await requeueAt({ cursor: outcome.nextCursor }, Date.now() + AVAILABILITY_SEED_CONTINUE_DELAY_MS);
+        return { state: "continued", attempts, deferrals, ...outcome };
+      }
+      return { state: "done", attempts, deferrals, ...outcome };
+    }
+    // ログに載せる失敗の理由。1行・200字までにし、URL と secret らしい所は既存の伏せ方で伏せる。
+    // 理由を文字にできない値を投げられても、ここからは投げない（失敗を数える側を止めないため）。
+    availabilitySeedErrorText(error) {
+      try {
+        return this.observationErrorText(error).replace(/\s+/g, " ").slice(0, 200);
+      } catch (textError) {
+        return "unprintable error";
+      }
+    }
+    // 1回ぶんの実行。仕事そのものの失敗（D1 の読み）は throw する（呼び手が attempts を数える）。
+    // チャンクごと・グループごとの失敗は数えるだけで次へ進む（古い書き込みワーカー・古い ChatGameDO の
+    // 404 もここに入る＝片側だけ新しくても落ちない）。
+    async runAvailabilitySeedTask(task) {
+      const blockNum = task?.blockNum;
+      if (!Number.isSafeInteger(blockNum) || blockNum < 0) throw new Error("availability seed: invalid block");
+      const cursor = Number.isSafeInteger(task?.cursor) && task.cursor >= 0 ? task.cursor : 0;
+      const db = this.env.BITCOINU_DATA;
+      if (!db) throw new Error("BITCOINU_DATA binding not found");
+      const deadlineAt = Date.now() + AVAILABILITY_SEED_RUN_BUDGET_MS;
+      const timedOut = { ok: false, reason: "run budget exhausted" };
+      const bounded = (work) => {
+        const remainingMs = deadlineAt - Date.now();
+        if (remainingMs <= 0) return Promise.resolve(timedOut);
+        let timer = null;
+        return Promise.race([
+          Promise.resolve().then(work),
+          new Promise((resolve) => {
+            timer = setTimeout(() => resolve(timedOut), remainingMs);
+          })
+        ]).finally(() => {
+          if (timer !== null) clearTimeout(timer);
+        });
+      };
+      const groupRead = await bounded(async () => ({
+        ok: true,
+        rows: (await db.prepare(
+          "SELECT group_id, members FROM game_groups WHERE block_num = ? ORDER BY group_id"
+        ).bind(blockNum).all())?.results
+      }));
+      if (groupRead === timedOut) throw new Error("game_groups read timed out");
+      const uidToGroup = /* @__PURE__ */ new Map();
+      const rows = [];
+      for (const row of Array.isArray(groupRead.rows) ? groupRead.rows : []) {
+        const rawGroupId = row?.group_id;
+        const groupId = typeof rawGroupId === "number" ? rawGroupId : typeof rawGroupId === "string" && /^\d{1,15}$/.test(rawGroupId) ? Number(rawGroupId) : Number.NaN;
+        if (!Number.isSafeInteger(groupId) || groupId < 0) continue;
+        let members;
+        try {
+          members = JSON.parse(row.members);
+        } catch (e) {
+          members = null;
+        }
+        if (!Array.isArray(members)) continue;
+        for (const member of members) {
+          const rawUid = member?.uid;
+          const uid2 = typeof rawUid === "string" ? rawUid : Number.isSafeInteger(rawUid) ? String(rawUid) : "";
+          if (!/^\d{1,20}$/.test(uid2) || uidToGroup.has(uid2)) continue;
+          uidToGroup.set(uid2, groupId);
+          rows.push({ uid: uid2 });
+        }
+      }
+      const chunks = this.buildShardWriteChunks(rows);
+      const totalChunks = chunks.length;
+      const nextCursor = Math.min(totalChunks, cursor + AVAILABILITY_SEED_CHUNKS_PER_RUN);
+      const summary = {
+        done: nextCursor >= totalChunks,
+        nextCursor,
+        totalChunks,
+        chunksRead: 0,
+        chunkFailures: 0,
+        partialChunks: 0,
+        values: 0,
+        rejectedValues: 0,
+        groupsSent: 0,
+        groupFailures: 0,
+        groupsSkipped: 0,
+        applied: 0,
+        firstFailure: null
+      };
+      if (cursor >= totalChunks) return summary;
+      const readOutcomes = await Promise.all(chunks.slice(cursor, nextCursor).map((chunk) => bounded(async () => {
+        try {
+          const uids = chunk.members.map((member) => member.uid);
+          const response = await requireBinding(this.env, writeWorkerBinding(chunk.workerIndex)).fetch(
+            internalJsonRequest("/read-play-schedule", { block_num: blockNum, uids }, this.env.API_SECRET)
+          );
+          if (response?.status !== 200) return { ok: false, reason: `read HTTP ${response?.status}` };
+          const data = await response.json();
+          const values = data?.values;
+          if (values === null || typeof values !== "object" || Array.isArray(values)) {
+            return { ok: false, reason: "read values is not an object" };
+          }
+          const picked = [];
+          let rejected = 0;
+          for (const uid2 of uids) {
+            if (!Object.hasOwn(values, uid2)) continue;
+            const value = values[uid2];
+            if (Number.isSafeInteger(value) && value > 0) picked.push([uid2, value]);
+            else rejected++;
+          }
+          return { ok: true, partial: data.success !== true, picked, rejected };
+        } catch (e) {
+          return { ok: false, reason: `read ${this.availabilitySeedErrorText(e)}` };
+        }
+      })));
+      const byGroup = /* @__PURE__ */ new Map();
+      for (const outcome of readOutcomes) {
+        if (!outcome?.ok) {
+          summary.chunkFailures++;
+          if (!summary.firstFailure) summary.firstFailure = String(outcome?.reason || "read failed");
+          continue;
+        }
+        summary.chunksRead++;
+        if (outcome.partial) summary.partialChunks++;
+        summary.rejectedValues += outcome.rejected;
+        for (const [uid2, value] of outcome.picked) {
+          const groupId = uidToGroup.get(uid2);
+          if (groupId === void 0) continue;
+          if (!byGroup.has(groupId)) byGroup.set(groupId, {});
+          byGroup.get(groupId)[uid2] = value;
+          summary.values++;
+        }
+      }
+      const targets = [...byGroup.entries()].sort((a, b) => a[0] - b[0]);
+      const sendable = targets.slice(0, AVAILABILITY_SEED_MAX_GROUP_CALLS_PER_RUN);
+      summary.groupsSkipped = targets.length - sendable.length;
+      const seedOutcomes = await this.batchChatDoCalls(sendable, ([groupId, availability]) => bounded(async () => {
+        try {
+          const doId = this.env.CHAT_GAME_DO.idFromName(`${blockNum}-${groupId}`);
+          const response = await this.env.CHAT_GAME_DO.get(doId).fetch(this.chatDoRequest("/seed-availability", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ availability })
+          }));
+          if (response?.status !== 200) return { ok: false, reason: `seed HTTP ${response?.status}` };
+          const body = await response.json();
+          if (body?.success !== true) return { ok: false, reason: "seed not accepted" };
+          return { ok: true, applied: Number.isSafeInteger(body.applied) && body.applied > 0 ? body.applied : 0 };
+        } catch (e) {
+          return { ok: false, reason: `seed ${this.availabilitySeedErrorText(e)}` };
+        }
+      }));
+      for (const outcome of seedOutcomes) {
+        if (!outcome?.ok) {
+          summary.groupFailures++;
+          if (!summary.firstFailure) summary.firstFailure = String(outcome?.reason || "seed failed");
+          continue;
+        }
+        summary.groupsSent++;
+        summary.applied += outcome.applied;
+      }
+      return summary;
     }
     // S3-003: reset-block の持ち越しぶんを、1リクエストにつき上限以下ずつ処理する。
     // 残りがあれば自分をもう一度登録する（空になったらキーごと削除）。
@@ -44316,6 +44614,7 @@ GET /calc-status?block=${blockNum}`
           }
           const scheduled = await this.scheduleChatWhenAllGroupsReady(blockNum);
           if (scheduled?.ready) {
+            await this.enqueueAvailabilitySeedBestEffort(blockNum);
             return {
               success: true,
               blockNum,
@@ -44457,6 +44756,7 @@ GET /calc-status?block=${blockNum}`
           }
         });
         await this.scheduleChatWhenAllGroupsReady(blockNum);
+        await this.enqueueAvailabilitySeedBestEffort(blockNum);
       }
       console.log(`ChatGameDO initialization: ${initialized} success, ${alreadyInitialized} already-initialized, ${errors} errors (${rosterShaMissingCount} roster sha missing)`);
       return {
@@ -56398,6 +56698,34 @@ ${detail}`
     }
   }
 
+  // vendor/workers/game_workers/lib/reaction.js
+  var LIKE_REACTION = 1;
+  var REACTION_STAMPS = Object.freeze([LIKE_REACTION]);
+  var MAX_REACTIONS_PER_UID = 300;
+  var MSG_KEY_RE = /^0x[0-9a-f]{64}$/;
+  var SIGNATURE_RE = /^0x[0-9a-f]{130}$/;
+  function isReactionShape(r) {
+    return r !== null && typeof r === "object" && !Array.isArray(r) && typeof r.uid === "string" && r.uid.length > 0 && r.uid.length <= 64 && typeof r.ref === "string" && MSG_KEY_RE.test(r.ref) && REACTION_STAMPS.includes(r.stamp) && typeof r.on === "boolean" && Number.isSafeInteger(r.timestamp) && r.timestamp >= 0 && typeof r.signature === "string" && SIGNATURE_RE.test(r.signature);
+  }
+  function pickReaction(r) {
+    return { uid: r.uid, ref: r.ref, stamp: r.stamp, on: r.on, timestamp: r.timestamp, signature: r.signature };
+  }
+  var reactionSlot = (r) => `${r.ref}|${r.stamp}`;
+  function isNewerReaction(a, b) {
+    if (!b) return true;
+    if (a.timestamp !== b.timestamp) return a.timestamp > b.timestamp;
+    return a.signature > b.signature;
+  }
+  function mergeReactionInto(table, r, max = MAX_REACTIONS_PER_UID) {
+    if (!table || typeof table !== "object" || !isReactionShape(r)) return false;
+    const slot = reactionSlot(r);
+    const prev = Object.prototype.hasOwnProperty.call(table, slot) ? table[slot] : null;
+    if (prev && !isNewerReaction(r, prev)) return false;
+    if (!prev && Object.keys(table).length >= max) return false;
+    table[slot] = pickReaction(r);
+    return true;
+  }
+
   // vendor/workers/game_workers/chat-game-DO.js
   var sameStringArray = (a, b) => Array.isArray(a) && Array.isArray(b) && a.length === b.length && a.every((value, index2) => value === b[index2]);
   function rosterHashOfMembers(members) {
@@ -56412,11 +56740,21 @@ ${detail}`
   var WS_FREE_PRESENCE = 120;
   var WS_PRESENCE_REFILL_MS = 3e4;
   var PRESENCE_RELAY_MIN_MS = 6e4;
+  var WS_FREE_REACTIONS = 60;
+  var WS_REACTION_REFILL_MS = 2e3;
+  var WS_REACTION_DROPS_PER_STRIKE = 20;
+  var REACTION_TIME_SLACK_MS = 24 * 60 * 60 * 1e3;
   var WS_FREE_RECEIPTS = 600;
   var WS_MAX_SOCKETS_PER_UID = 4;
   var WS_MAX_TOTAL_SOCKETS_PER_UID = 16;
   var WS_CLOSE_SUPERSEDED = 4001;
   var WS_CLOSE_SUPERSEDED_REASON = "superseded";
+  var WS_CLOSE_OBJECT_MOVED = 4012;
+  var WS_CLOSE_OBJECT_MOVED_REASON = "object moved";
+  function isObjectMovedError(error) {
+    const text = typeof error === "string" ? error : typeof error?.message === "string" ? error.message : "";
+    return /object has moved to a different machine/i.test(text);
+  }
   var WS_UPGRADE_RATE_WINDOW_MS = 60 * 1e3;
   var WS_UPGRADE_RATE_MAX = 120;
   var WS_ACCEPT_TAG_PREFIX = "ws-accepted ";
@@ -56436,6 +56774,7 @@ ${detail}`
   var SUBMISSION_SNAPSHOT_ALARM_KEY = "live_submissions_snapshot_alarm";
   var SUBMISSION_SNAPSHOT_FINAL_STATUS_KEY = "submissionSnapshotFinalStatus";
   var INVALIDATED_NO_GAME_KEY = "invalidatedNoGame";
+  var AVAILABILITY_SEED_CLAMP_REACH_MS = 8 * 24 * 60 * 60 * 1e3;
   var CHAT_OBSERVABILITY_KEY = "chatObservability:v1";
   var OBSERVABILITY_VERSION = 1;
   var OBSERVABILITY_ERROR_MAX_CHARS = 500;
@@ -56450,7 +56789,10 @@ ${detail}`
     "/reset": "DELETE",
     "/invalidate-no-game": "POST",
     "/debug-submission": "POST",
-    "/cleanup": "POST"
+    "/cleanup": "POST",
+    // 便 PLAYAT（2026-11-25）: 先に設定した参加予定時刻の受け取り口。グループのメンバーにだけ見せる値を
+    // 保存して全員へ配る口なので、GameMasterDO 以外から呼べないようにする。
+    "/seed-availability": "POST"
   });
   var CHAT_HTTP_AUTH_PATHS = new Set(Object.keys(CHAT_HTTP_AUTH_METHODS));
   var boundedError = (error) => String(error?.message || error || "unknown error").replace(/Bearer\s+[^\s,;]+/gi, "Bearer [redacted]").replace(/([?&](?:token|secret|key)=)[^&\s]+/gi, "$1[redacted]").slice(0, OBSERVABILITY_ERROR_MAX_CHARS);
@@ -56713,6 +57055,31 @@ ${detail}`
       }
       return this.strikeWs(ws, uid2, reason);
     }
+    // 便 LIKE: いいね（表示だけ）の時間で戻る枠。枠を超えた分は黙って捨て（真を返す）、連打の数えは
+    // 捨てた分の WS_REACTION_DROPS_PER_STRIKE 件ごとに1つだけ足す（正直な画面は枠より遅く送るので、捨てる前に止まる。
+    // 押し続けるだけでチャットの接続を閉じさせない・それでも氾濫は最後には閉じる）。
+    dropIfOverReactionQuota(ws, uid2) {
+      const a = this.wsAbuseOf(ws);
+      const buckets = a.refillingOps ||= /* @__PURE__ */ new Map();
+      const now = Date.now();
+      let bucket = buckets.get("reaction");
+      if (!bucket) {
+        bucket = { tokens: WS_FREE_REACTIONS, at: now };
+        buckets.set("reaction", bucket);
+      }
+      const refill = Math.floor(Math.max(0, now - bucket.at) / WS_REACTION_REFILL_MS);
+      if (refill > 0) {
+        bucket.tokens = Math.min(WS_FREE_REACTIONS, bucket.tokens + refill);
+        bucket.at += refill * WS_REACTION_REFILL_MS;
+      }
+      if (bucket.tokens > 0) {
+        bucket.tokens--;
+        return false;
+      }
+      a.reactionDrops = (a.reactionDrops || 0) + 1;
+      if (a.reactionDrops % WS_REACTION_DROPS_PER_STRIKE === 0) this.strikeWs(ws, uid2, "reaction spam");
+      return true;
+    }
     noteStrikeClose(uid2) {
       if (!uid2) return;
       const now = Date.now();
@@ -56851,6 +57218,9 @@ ${detail}`
       }
       if (path === "/cleanup" && request.method === "POST") {
         return this.handleCleanup();
+      }
+      if (path === "/seed-availability" && request.method === "POST") {
+        return this.handleSeedAvailability(request);
       }
       return createCORSResponse({ error: "Not Found" }, 404);
     }
@@ -57802,6 +58172,7 @@ ${detail}`
     // Hibernation API: WebSocketメッセージ受信
     async webSocketMessage(ws, message) {
       if (typeof ws?.readyState !== "number" || ws.readyState !== WS_READY_STATE_OPEN) return;
+      let messageType = null;
       try {
         if (await this.storage.get(INVALIDATED_NO_GAME_KEY)) {
           try {
@@ -57811,6 +58182,7 @@ ${detail}`
           return;
         }
         const data = JSON.parse(message);
+        messageType = typeof data?.type === "string" ? data.type : null;
         const tags = this.state.getTags(ws);
         const tag = tags[0];
         if (!tag) {
@@ -57820,7 +58192,7 @@ ${detail}`
         const isSpectator = tag.startsWith("spectator:");
         const uid2 = isSpectator ? tag.replace("spectator:", "") : tag;
         const abuse = this.wsAbuseOf(ws);
-        abuse.total++;
+        if (data?.type !== "reaction") abuse.total++;
         if (abuse.total > WS_TOTAL_MSG_MAX) {
           console.warn(`WS message budget exceeded: uid=${uid2} \u2014 closing connection`);
           this.noteStrikeClose(uid2);
@@ -57851,6 +58223,9 @@ ${detail}`
           case "set_presence":
             await this.handleWsSetPresence(ws, uid2, data);
             break;
+          case "reaction":
+            await this.handleWsReaction(ws, uid2, data);
+            break;
           case "report":
             await this.handleWsReport(ws, uid2, data);
             break;
@@ -57871,6 +58246,23 @@ ${detail}`
         }
       } catch (error) {
         console.error("Error handling WebSocket message:", error);
+        if (isObjectMovedError(error)) {
+          if (messageType === null) {
+            try {
+              const parsed = JSON.parse(message);
+              messageType = typeof parsed?.type === "string" ? parsed.type : null;
+            } catch {
+            }
+          }
+          if (messageType !== "ping" && messageType !== "reaction") this.sendTo(ws, { type: "error", message: "Internal error" });
+          try {
+            ws.close(WS_CLOSE_OBJECT_MOVED, WS_CLOSE_OBJECT_MOVED_REASON);
+            return;
+          } catch {
+            if (messageType !== "ping" && messageType !== "reaction") return;
+          }
+        }
+        if (messageType === "reaction") return;
         this.sendTo(ws, { type: "error", message: "Internal error" });
       }
     }
@@ -57980,6 +58372,8 @@ ${detail}`
         availability,
         everOnlineUids,
         awayUids,
+        // 便 LIKE: 発言へのいいね（署名つき・表示だけ）。この欄があることで、クライアントは WS でも送ってよいと知る
+        reactions: await this.collectReactions(memberList),
         activeUids: await this.computeActiveUids()
       });
       this.sendTo(ws, {
@@ -58354,13 +58748,87 @@ ${detail}`
       } else {
         availability[uid2] = availableAt;
       }
-      await this.storage.put("availability", availability);
+      const availabilitySeedClosed = uidMap2(await this.storage.get("availabilitySeedClosed"));
+      availabilitySeedClosed[uid2] = true;
+      await this.storage.put({ availability, availabilitySeedClosed });
       this.broadcast({
         type: "availability_update",
         uid: uid2,
         availableAt
       });
       console.log(`Availability set by ${uid2}: ${availableAt}`);
+    }
+    // 便 PLAYAT（2026-11-25）: 先に設定した参加予定時刻の受け取り口（GameMasterDO から・API_SECRET 必須）。
+    // 利用者がエントリーの時かマイページで入れた値（`users.entry_blocks[N].playAt`）を、GameMasterDO が
+    // 初期化の後に集めて `{ availability: { uid: エポックms } }` で渡す。署名なし・採点に無関係の表示だけの値。
+    // 🔴 上書きしない（依頼書 I5）: 入れるのは、名簿のメンバーで、まだ値が無く、本人が WS で触っておらず、
+    //    前に渡したことも無い uid だけ。本人が今の画面で入れた・消した値の方が新しいので、そちらを残す。
+    // 🔴 名簿のメンバーを回す（本文の鍵を回さない）。本文は API_SECRET を持つ呼び手が作るが、
+    //    大きさに関係なく手数を名簿の人数までにしておく。
+    async handleSeedAvailability(request) {
+      let body;
+      try {
+        body = await request.json();
+      } catch {
+        return createCORSResponse({ error: "Request body must be JSON" }, 400);
+      }
+      const incoming = body?.availability;
+      if (incoming === null || typeof incoming !== "object" || Array.isArray(incoming)) {
+        return createCORSResponse({ error: "availability object is required" }, 400);
+      }
+      if (await this.storage.get(INVALIDATED_NO_GAME_KEY)) {
+        return createCORSResponse({ error: "Timeline no-game is terminal" }, 409);
+      }
+      const phase = await this.storage.get("phase");
+      if (phase !== "waiting" && phase !== "chatting") {
+        return createCORSResponse({ success: true, applied: 0, skipped: "phase" });
+      }
+      const members = await this.storage.get("members");
+      const availability = uidMap2(await this.storage.get("availability"));
+      const availabilitySeedClosed = uidMap2(await this.storage.get("availabilitySeedClosed"));
+      const everOnline = phase === "chatting" ? uidMap2(await this.storage.get("everOnline")) : null;
+      const phaseEndTime = await this.storage.get("phaseEndTime");
+      const periodDurations = await this.storage.get("periodDurations");
+      const now = Date.now();
+      let earliest = now - 60 * 1e3;
+      let latest = now + 48 * 60 * 60 * 1e3;
+      let clampStart = null;
+      const endTimeReadable = Number.isFinite(phaseEndTime) && phaseEndTime > 0;
+      if (phase === "waiting") {
+        const gamePeriod = periodDurations?.gamePeriod;
+        if (endTimeReadable && Number.isFinite(gamePeriod) && gamePeriod > 0) {
+          earliest = Math.max(earliest, phaseEndTime);
+          latest = Math.min(latest, phaseEndTime + gamePeriod);
+          if (Number.isSafeInteger(phaseEndTime)) clampStart = phaseEndTime;
+        }
+      } else if (endTimeReadable) {
+        latest = Math.min(latest, phaseEndTime);
+      }
+      const applied = [];
+      for (const member of Array.isArray(members) ? members : []) {
+        const uid2 = member?.uid;
+        if (typeof uid2 !== "string" || !Object.hasOwn(incoming, uid2)) continue;
+        if (availabilitySeedClosed[uid2] || availability[uid2] != null) continue;
+        if (everOnline && everOnline[uid2]) continue;
+        let value = incoming[uid2];
+        if (!Number.isSafeInteger(value)) continue;
+        if (clampStart !== null && value < clampStart && value >= clampStart - AVAILABILITY_SEED_CLAMP_REACH_MS) {
+          value = clampStart;
+        }
+        if (value < earliest || value > latest) continue;
+        availability[uid2] = value;
+        availabilitySeedClosed[uid2] = true;
+        applied.push([uid2, value]);
+      }
+      if (applied.length === 0) {
+        return createCORSResponse({ success: true, applied: 0 });
+      }
+      await this.storage.put({ availability, availabilitySeedClosed });
+      for (const [uid2, availableAt] of applied) {
+        this.broadcast({ type: "availability_update", uid: uid2, availableAt });
+      }
+      console.log(`Availability seeded: applied=${applied.length}`);
+      return createCORSResponse({ success: true, applied: applied.length });
     }
     // 在席状態（active / away）の受理と配信（v3.3追補）。
     // クライアントは操作が IDLE_TIMEOUT_MS（10分）検知されないと away になり、その間は受領証明を
@@ -58386,6 +58854,47 @@ ${detail}`
         relayAt.set(uid2, now);
         this.broadcast({ type: "presence_update", uid: uid2, state: state2 });
       }
+    }
+    // 便 LIKE（2026-11-26・ユーザーの指示）: 発言へのいいね。表示だけで、採点・受理・提出物・受領証明には使わない。
+    // 署名は確かめない（受け取る各クライアントが名簿の signKey で確かめ、合わないものを捨てる）。ここで見るのは、
+    // 接続の uid と同じ名義・形・時刻の大まかな範囲・名簿のメンバーであることだけ。おかしなものは黙って捨てる
+    // （古いクライアントにも新しいクライアントにも、エラーの帯を出させない）。枠を超えた分も黙って捨てる（dropIfOverReactionQuota）。
+    // 保存は uid ごとの鍵 `reactions:{uid}`（1つの値が大きくならないように）に、（発言, 種類）ごとの最新だけ・上限つき。
+    async handleWsReaction(ws, uid2, data) {
+      if (this.dropIfOverReactionQuota(ws, uid2)) return;
+      const phase = await this.storage.get("phase");
+      if (phase !== "chatting") return;
+      const reaction = data?.reaction;
+      if (!isReactionShape(reaction) || reaction.uid !== uid2) return;
+      if (Math.abs(Date.now() - reaction.timestamp) > REACTION_TIME_SLACK_MS) return;
+      const members = await this.storage.get("members") || [];
+      if (!members.some((m) => m?.uid === uid2)) return;
+      await this.serializeActionByActor(uid2, "reaction", async () => {
+        const key = `reactions:${uid2}`;
+        const table = await this.storage.get(key) || {};
+        if (!mergeReactionInto(table, reaction)) return;
+        await this.storage.put(key, table);
+        this.broadcast({ type: "reaction", reaction: pickReaction(reaction) });
+      });
+    }
+    // 便 LIKE: 名簿のメンバーの保存済みのいいねを一覧にする（init_response 用）。表示だけなので、読めなくても
+    // init は止めない（空の一覧を返す）。
+    async collectReactions(memberList) {
+      const keys = (memberList || []).map((m) => m?.uid).filter((u) => typeof u === "string" && u).map((u) => `reactions:${u}`);
+      if (keys.length === 0) return [];
+      let stored;
+      try {
+        stored = await this.storage.get(keys);
+      } catch {
+        return [];
+      }
+      if (!(stored instanceof Map)) return [];
+      const out = [];
+      for (const table of stored.values()) {
+        if (!table || typeof table !== "object") continue;
+        for (const r of Object.values(table)) if (isReactionShape(r)) out.push(pickReaction(r));
+      }
+      return out;
     }
     // 同じ発信者・種別の署名検証待ちが重なっても、保存件数の読み書きを直列にする。
     // 予算は発信者・種別ごとであり、他人の発信を待たせない。
@@ -60857,7 +61366,19 @@ ${detail}`
   ];
   var QUIESCENCE_MS = Number("10000");
   var PER_PUBKEY_EVENT_CAP = 1200;
-  var MAX_SEEN_EVENT_IDS = PER_PUBKEY_EVENT_CAP * 5 + 5;
+  var PER_PUBKEY_REACTION_CAP = 300;
+  var REACTION_PUBLISH_COUNTS = /* @__PURE__ */ new Map();
+  function reactionTagOf(tag) {
+    return `${tag}:like`;
+  }
+  function hasGroupTag(ev, value) {
+    return Array.isArray(ev?.tags) && ev.tags.some((t2) => Array.isArray(t2) && t2[0] === "t" && t2[1] === value);
+  }
+  function isReactionEnvelope(ev, tag) {
+    return hasGroupTag(ev, reactionTagOf(tag)) && !hasGroupTag(ev, tag);
+  }
+  var MAX_SEEN_EVENT_IDS = (PER_PUBKEY_EVENT_CAP + PER_PUBKEY_REACTION_CAP) * 5 + 10;
+  var PRE_LIKE_SEEN_EVENT_IDS = PER_PUBKEY_EVENT_CAP * 5 + 5;
   var MAX_RECEIPTS_PER_ISSUER = 700;
   var CarriedReceiptStoreIndex = class {
     constructor(myUid, compare, factKeysOf = null) {
@@ -61885,7 +62406,7 @@ ${detail}`
   }
   var RECONNECT_BASE_MS = 3e3;
   var RECONNECT_MAX_MS = 6e4;
-  var HISTORY_PAGE_LIMIT = MAX_SEEN_EVENT_IDS;
+  var HISTORY_PAGE_LIMIT = PRE_LIKE_SEEN_EVENT_IDS;
   var MARKED_ID_REQUEST_SIZE = 100;
   var MAX_HISTORY_PAGES = MAX_SEEN_EVENT_IDS * 2 + 2;
   var OWN_HISTORY_CONNECT_WAIT_MS = 30 * 1e3;
@@ -61933,6 +62454,7 @@ ${detail}`
     }) {
       this.relays = relays;
       this.tag = tag;
+      this.reactionTag = reactionTagOf(tag);
       this.authors = new Set(authors || []);
       this.ownAuthor = typeof ownAuthor === "string" && this.authors.has(ownAuthor) ? ownAuthor : null;
       this.since = Number(since) > 0 ? Math.floor(Number(since)) : 0;
@@ -61955,6 +62477,8 @@ ${detail}`
       this.perRelayInvalid = /* @__PURE__ */ new Map();
       this.quarantinedUntil = /* @__PURE__ */ new Map();
       this.verifiedOverCap = /* @__PURE__ */ new Set();
+      this.perPubkeyReactionCount = /* @__PURE__ */ new Map();
+      this.reactionOverCap = /* @__PURE__ */ new Set();
       this.pendingPublishes = [];
       this.closed = false;
       this.subSerial = 0;
@@ -62133,7 +62657,7 @@ ${detail}`
       setTimeout(() => this._connectOne(url), delay);
     }
     _subscribe(ws) {
-      const filter = { kinds: [P2P_EVENT_KIND], "#t": [this.tag] };
+      const filter = { kinds: [P2P_EVENT_KIND], "#t": [this.tag, this.reactionTag] };
       if (this.since > 0) filter.since = this.since;
       if (this.authors.size === 0) return;
       filter.authors = [...this.authors];
@@ -62151,7 +62675,7 @@ ${detail}`
       if (this.authors.size === 0 || !Number.isSafeInteger(until) || this.since > 0 && until < this.since || pageCount >= MAX_HISTORY_PAGES) return "end";
       const filter = {
         kinds: [P2P_EVENT_KIND],
-        "#t": [this.tag],
+        "#t": [this.tag, this.reactionTag],
         authors: [...this.authors],
         until,
         limit: HISTORY_PAGE_LIMIT
@@ -62289,8 +62813,9 @@ ${detail}`
       const cursorTime = rememberedAt ?? ev.created_at;
       if (this.since > 0 && (typeof cursorTime !== "number" || cursorTime < this.since)) return;
       if (!this.authors.has(ev.pubkey)) return;
-      if (ev.kind !== P2P_EVENT_KIND || !Array.isArray(ev.tags) || !ev.tags.some((tag) => Array.isArray(tag) && tag[0] === "t" && tag[1] === this.tag)) return;
-      if (this.verifiedOverCap.has(ev.pubkey)) {
+      if (ev.kind !== P2P_EVENT_KIND || !Array.isArray(ev.tags) || !(hasGroupTag(ev, this.tag) || hasGroupTag(ev, this.reactionTag))) return;
+      const reactionEnvelope = isReactionEnvelope(ev, this.tag);
+      if (this.verifiedOverCap.has(ev.pubkey) || reactionEnvelope && this.reactionOverCap.has(ev.pubkey)) {
         if (page && parsed[1] === page.subId && Number.isSafeInteger(ev.created_at) && ev.created_at <= page.until) {
           page.oldest = page.oldest === null ? ev.created_at : Math.min(page.oldest, ev.created_at);
         }
@@ -62335,7 +62860,15 @@ ${detail}`
         if (alreadyCounted) page.knownIds += 1;
         else page.newIds += 1;
       }
-      if (!alreadyCounted) {
+      if (!alreadyCounted && reactionEnvelope) {
+        const count = (this.perPubkeyReactionCount.get(ev.pubkey) || 0) + 1;
+        this.perPubkeyReactionCount.set(ev.pubkey, count);
+        if (count > PER_PUBKEY_REACTION_CAP) {
+          this.reactionOverCap.add(ev.pubkey);
+          this._rememberSeenId(ev.id, ev.created_at);
+          return;
+        }
+      } else if (!alreadyCounted) {
         const count = (this.perPubkeyCount.get(ev.pubkey) || 0) + 1;
         this.perPubkeyCount.set(ev.pubkey, count);
         if (count === FLOOD_ALERT_THRESHOLD && this.onFlood && !this.floodAlerted.has(ev.pubkey)) {
@@ -62355,7 +62888,7 @@ ${detail}`
         const result = this.onEvent(ev, url);
         if (result && typeof result.then === "function") {
           const pending = Promise.resolve(result);
-          if (this.ownAuthor && ev.pubkey === this.ownAuthor) {
+          if (this.ownAuthor && ev.pubkey === this.ownAuthor && !reactionEnvelope) {
             this._ownInflight.add(pending);
             const remove = () => this._ownInflight.delete(pending);
             pending.then(remove, remove);
@@ -62522,7 +63055,8 @@ ${detail}`
         states: Object.fromEntries(urls.filter((url) => this._ownState.has(url)).map((url) => [url, this._ownState.get(url)]))
       };
     }
-    publish(event) {
+    // queue: 全リレーが切れている間はバッファへ積むか（便 LIKE: いいねは積まない＝発言・既読・投票の 200 件の枠を押し出さない）
+    publish(event, { queue = true } = {}) {
       const json = JSON.stringify(["EVENT", event]);
       let sent = 0;
       for (const ws of this.sockets.values()) {
@@ -62534,7 +63068,7 @@ ${detail}`
           }
         }
       }
-      if (sent === 0) {
+      if (sent === 0 && queue) {
         this.pendingPublishes.push(json);
         if (this.pendingPublishes.length > 200) this.pendingPublishes.shift();
       }
@@ -62694,6 +63228,7 @@ ${detail}`
       this.hasOwnRecord = typeof opts.hasOwnRecord === "function" ? opts.hasOwnRecord : null;
       this.onPresence = opts.onPresence || (() => {
       });
+      this.onReaction = typeof opts.onReaction === "function" ? opts.onReaction : null;
       this.presenceByUid = {};
       this._ownPublishedSigs = new Set(this._loadJson(this._ownSigsStoreKey(), []));
       if (Object.keys(this.relayActions).length > 0) {
@@ -62937,7 +63472,7 @@ ${detail}`
       return this.p2pUnavailable ? { unavailable: true, startedAt: null, done: 0, waiting: [], states: {} } : { startedAt: null, done: 0, waiting: [], states: {} };
     }
     // ---------- 発行 ----------
-    _publishInner(innerObj) {
+    _publishInner(innerObj, { queue = true, tag = this.tag, onSent = null } = {}) {
       if (innerObj && innerObj.signature) {
         this._ownPublishedSigs.add(innerObj.signature);
         if (innerObj.type === "action") this._persistOwnSig(innerObj.signature);
@@ -62949,11 +63484,12 @@ ${detail}`
         const ev = buildEvent(
           this.nostrSk,
           this.nostrPubkey,
-          [["t", this.tag]],
+          [["t", tag]],
           content,
           Math.floor(this.now() / 1e3)
         );
-        this.pool.publish(ev);
+        const sent = this.pool.publish(ev, { queue });
+        if (sent > 0 && typeof onSent === "function") onSent();
       };
       return doPublish().catch((e) => console.error("relay publish failed:", e));
     }
@@ -62998,6 +63534,18 @@ ${detail}`
         signature: presence.signature
       });
     }
+    // 便 LIKE: 発言へのいいねの発行（署名つき・表示だけ）。reaction = {uid, ref, stamp, on, timestamp, signature}
+    // いいねのタグ（reactionTagOf）だけを付ける。切れている間は積まない。このチャネルから出すのは、受け手の上限（PER_PUBKEY_REACTION_CAP）より少し手前まで。
+    // 出した数はゲームの身元（ブロック・組・本人）ごとに頁の間ずっと数え（チャネルを作り直しても戻さない）、送れなかった分は数えない（反証 RS3-R07）。
+    publishReaction(reaction) {
+      if (!isReactionShape(reaction)) return void 0;
+      const key = `${this.blockNum}|${this.groupId}|${this.uid}`;
+      if ((REACTION_PUBLISH_COUNTS.get(key) || 0) >= PER_PUBKEY_REACTION_CAP - 20) return void 0;
+      return this._publishInner(
+        { type: "reaction", blockNum: this.blockNum, groupId: this.groupId, ...pickReaction(reaction) },
+        { queue: false, tag: reactionTagOf(this.tag), onSent: () => REACTION_PUBLISH_COUNTS.set(key, (REACTION_PUBLISH_COUNTS.get(key) || 0) + 1) }
+      );
+    }
     // 受領証明の発行（v3.2 §6.3・平文封筒・グループ全員へブロードキャスト）。
     // receipt = {receiverUid, actionHash, timestamp, signature}（action受領）
     //         | {receiverUid, senderUid, msgRefs[], timestamp, signature}（既読バッチ）
@@ -63016,9 +63564,11 @@ ${detail}`
       try {
         const inner = JSON.parse(ev.content);
         if (!inner || inner.blockNum !== this.blockNum || inner.groupId !== this.groupId) return;
-        if (!["chat", "action", "receipt", "presence"].includes(inner.type)) return;
+        if (!["chat", "action", "receipt", "presence", "reaction"].includes(inner.type)) return;
+        if (inner.type === "reaction" !== isReactionEnvelope(ev, this.tag)) return;
         const senderUid = inner.type === "receipt" ? inner.receiverUid : inner.uid;
         if (this.validNostrByUid.get(senderUid) !== ev.pubkey) return;
+        if (inner.type === "reaction") return await this._handleReaction(inner);
         if (inner.type === "chat" && !isClientChatWithinLimit(inner.text, this.getMaxMsgChars())) return;
         if (this.isAccepted(inner.type, inner)) return true;
         if (this.futureMarks?.noteEvent(inner.type, inner, ev.id)) return true;
@@ -63124,6 +63674,27 @@ ${detail}`
         return true;
       }
       await this._ingestReceipt(receipt, { verified: true });
+    }
+    // 便 LIKE: いいねの受信。形・名簿・未来でないことだけを見て渡す（未来のものは捨てる・印は付けない）。
+    // 署名は受け取った画面（onReaction の先）が確定名簿の鍵で確かめる（確定名簿の前に届いた分は画面が預かる）。
+    async _handleReaction(inner) {
+      if (!this.onReaction) return true;
+      const reaction = {
+        uid: inner.uid,
+        ref: inner.ref,
+        stamp: inner.stamp,
+        on: inner.on,
+        timestamp: inner.timestamp,
+        signature: inner.signature
+      };
+      if (!isReactionShape(reaction)) return true;
+      if (!this.members.some((m) => m.uid === reaction.uid)) return true;
+      if (!isClientTimestampAllowed(reaction.timestamp, this.now())) return true;
+      try {
+        await this.onReaction(reaction);
+      } catch {
+      }
+      return true;
     }
     // 在席通知の受理（v3.3追補）。署名検証＋古い通知の無視のみ。表示専用なので永続化しない。
     async _handlePresence(inner) {
@@ -68003,6 +68574,50 @@ ${detail}`
   // vendor/src/utils/read-receipt-batching.js
   var READ_RECEIPT_BATCH_MS = 8e3;
 
+  // vendor/src/utils/voidDisplay.js
+  var VOID_DISPLAY_CAPS = Object.freeze({
+    maxMessages: GUEST_PINNED_RULES.maxMessages,
+    maxChars: GUEST_PINNED_RULES.maxChars
+  });
+  function isVoidTimelineItem(timestamp, readCount, { nowMs = null, receiptedOnly = false, window: window2 = null } = {}) {
+    if (readCount > 0) return false;
+    if (!Number.isSafeInteger(timestamp)) return false;
+    if (!Number.isFinite(window2?.startMs) || !Number.isFinite(window2?.endMs) || timestamp < window2.startMs || timestamp > window2.endMs) return false;
+    if (receiptedOnly) {
+      if (nowMs == null) return true;
+      return !(Math.abs(nowMs - timestamp) <= RECEIPT_FRESH_WINDOW_MS);
+    }
+    if (nowMs == null) return false;
+    return !(Math.abs(nowMs - timestamp) <= RECEIPT_FRESH_WINDOW_MS);
+  }
+  var compareKey = (a, b) => a < b ? -1 : a > b ? 1 : 0;
+  function voidDisplayMessageKeys(entries2, caps = VOID_DISPLAY_CAPS) {
+    const allowed = /* @__PURE__ */ new Set();
+    const maxMessages = caps?.maxMessages;
+    const maxChars = caps?.maxChars;
+    if (!Number.isSafeInteger(maxMessages) || maxMessages < 0 || !Number.isSafeInteger(maxChars) || maxChars < 0 || !Array.isArray(entries2)) return allowed;
+    const bySender = /* @__PURE__ */ new Map();
+    for (const entry of entries2) {
+      if (entry === null || typeof entry !== "object" || typeof entry.key !== "string") continue;
+      const list = bySender.get(entry.uid);
+      if (list) list.push(entry);
+      else bySender.set(entry.uid, [entry]);
+    }
+    const tsOf = (entry) => Number.isSafeInteger(entry.timestamp) ? entry.timestamp : Number.MAX_SAFE_INTEGER;
+    for (const list of bySender.values()) {
+      list.sort((a, b) => tsOf(a) - tsOf(b) || compareKey(a.key, b.key));
+      let count = 0;
+      let chars = 0;
+      for (const entry of list) {
+        count += 1;
+        chars += countHalfWidthChars(typeof entry.text === "string" ? entry.text : "");
+        if (count > maxMessages || chars > maxChars) break;
+        allowed.add(entry.key);
+      }
+    }
+    return allowed;
+  }
+
   // vendor/src/utils/submissionGuarantee.js
   var GUARANTEE_REJECT_REASONS = Object.freeze([
     "invalid_signature",
@@ -70988,17 +71603,32 @@ ${Math.round(plan.beforeBytes / 1024)}KB \u2192 ${Math.round(plan.afterBytes / 1
     const closeAt = submissionChatCloseAt();
     return Number.isSafeInteger(closeAt) && atMs >= closeAt - VOTE_RECEIPT_CUTOFF_MS || hasVisibleConfirmedVote(targetUid, atMs);
   }
+  function actionReceiptInChatWindow(ts, chatWindow) {
+    return !chatWindow || typeof ts === "number" && ts >= chatWindow.startMs && ts <= chatWindow.endMs;
+  }
   function actionReceipted(actorUid, actionType, action) {
     if (!action?.encrypted || action.timestamp == null) return false;
     const h = actionHashV2(actionType, state.blockNum, state.groupId, actorUid, action.encrypted, action.timestamp);
     const set = /* @__PURE__ */ new Set();
-    for (const rc of clientChatSourcedReceipts(state.receipts, submissionChatWindow(), submissionChatCloseAt())) {
-      if (rc.actionHash === h && isReceiptTimely(rc.timestamp, action.timestamp)) set.add(rc.receiverUid);
+    const chatWindow = submissionChatWindow();
+    for (const rc of clientChatSourcedReceipts(state.receipts, chatWindow, submissionChatCloseAt())) {
+      if (rc.actionHash === h && isReceiptTimely(rc.timestamp, action.timestamp) && actionReceiptInChatWindow(rc.timestamp, chatWindow)) set.add(rc.receiverUid);
     }
     return [...set].some((u) => u !== actorUid);
   }
   function myVoteIsVoid() {
-    return !!state.myVote?.timestamp && !actionReceipted(state.uid, "vote", state.myVote) && clientNow2() - state.myVote.timestamp > RECEIPT_FRESH_WINDOW_MS;
+    return !!state.myVote?.timestamp && !ownVoteReceipted() && clientNow2() - state.myVote.timestamp > RECEIPT_FRESH_WINDOW_MS;
+  }
+  function memberVotes(uid2) {
+    if (uid2 === state.uid) {
+      return [state.myVote, ...Array.isArray(state.myVotePrev) ? state.myVotePrev : []].filter((v) => v?.encrypted && v.timestamp != null);
+    }
+    const votes = state.observedActions?.votes || {};
+    const list = [votes[uid2], ...Array.isArray(votes[`${uid2}__extras`]) ? votes[`${uid2}__extras`] : []];
+    return list.filter((v) => v?.encrypted && v.timestamp != null);
+  }
+  function ownVoteReceipted() {
+    return memberVotes(state.uid).some((v) => actionReceipted(state.uid, "vote", v));
   }
   function reportTargetStatusMap() {
     const rank = { receipted: 3, pending: 2, void: 1 };
@@ -72225,7 +72855,7 @@ ${Math.round(plan.beforeBytes / 1024)}KB \u2192 ${Math.round(plan.afterBytes / 1
     const cutoff = Number.isSafeInteger(closeAt) ? closeAt - VOTE_RECEIPT_CUTOFF_MS : null;
     const votingClosed = cutoff !== null && clientNow2() >= cutoff;
     const cutoffTime = cutoff === null ? null : `${String(new Date(cutoff).getHours()).padStart(2, "0")}:${String(new Date(cutoff).getMinutes()).padStart(2, "0")}`;
-    const showDeadline = phase === "chatting" && state.voteDeadlineNoticeOpen && !state.away && !(state.myVote && actionReceipted(state.uid, "vote", state.myVote));
+    const showDeadline = phase === "chatting" && state.voteDeadlineNoticeOpen && !state.away && !ownVoteReceipted();
     const showProgress = phase === "chatting" && state.pendingVoteTarget !== null;
     const showReportWarning = phase === "chatting" && state.pendingReportWarningTarget != null;
     const showMultiSession = phase !== null && state.otherSessionReadReceipt;
@@ -72427,7 +73057,7 @@ ${Math.round(plan.beforeBytes / 1024)}KB \u2192 ${Math.round(plan.afterBytes / 1
     if (state.away) state.voteDeadlineEntryPending = true;
     else if (phase === "chatting" && state.voteDeadlineEntryPending && Number.isFinite(state.timeline?.chatCloseAt)) {
       state.voteDeadlineEntryPending = false;
-      const hasValidVote = !!state.myVote && actionReceipted(state.uid, "vote", state.myVote);
+      const hasValidVote = ownVoteReceipted();
       const remaining = state.timeline.chatCloseAt - renderNow;
       if (!hasValidVote && remaining >= 0 && remaining <= 3 * 60 * 60 * 1e3) {
         state.voteDeadlineNoticeOpen = true;
@@ -72617,8 +73247,7 @@ ${Math.round(plan.beforeBytes / 1024)}KB \u2192 ${Math.round(plan.afterBytes / 1
       ));
       card.append(row);
       const status = el("div", { className: "memberActionStatus" });
-      const memberVote = isSelf ? state.myVote : state.observedActions?.votes?.[m.uid];
-      const voted = !!memberVote && actionReadCount(m.uid, "vote", memberVote) > 0;
+      const voted = memberVotes(m.uid).some((v) => actionReadCount(m.uid, "vote", v) > 0);
       const memberReports = isSelf ? state.myReports : state.observedActions?.reports?.[m.uid] || [];
       const reported = (memberReports || []).filter((a) => a?.encrypted && a.timestamp != null && actionReadCount(m.uid, "report", a) > 0).length;
       if (voted) status.append(el("span", { className: "memberVotedBadge", textContent: state.tr("recovery.members.voted") }));
@@ -72674,8 +73303,9 @@ ${Math.round(plan.beforeBytes / 1024)}KB \u2192 ${Math.round(plan.afterBytes / 1
     if (!action?.encrypted || action.timestamp == null) return 0;
     const h = actionHashV2(actionType, state.blockNum, state.groupId, actorUid, action.encrypted, action.timestamp);
     const set = /* @__PURE__ */ new Set();
-    for (const rc of clientChatSourcedReceipts(state.receipts, submissionChatWindow(), submissionChatCloseAt())) {
-      if (rc.actionHash === h && rc.receiverUid !== actorUid && isReceiptTimely(rc.timestamp, action.timestamp)) set.add(rc.receiverUid);
+    const chatWindow = submissionChatWindow();
+    for (const rc of clientChatSourcedReceipts(state.receipts, chatWindow, submissionChatCloseAt())) {
+      if (rc.actionHash === h && rc.receiverUid !== actorUid && isReceiptTimely(rc.timestamp, action.timestamp) && actionReceiptInChatWindow(rc.timestamp, chatWindow)) set.add(rc.receiverUid);
     }
     return set.size;
   }
@@ -72728,6 +73358,16 @@ ${Math.round(plan.beforeBytes / 1024)}KB \u2192 ${Math.round(plan.afterBytes / 1
     const withinWindow = (ts) => isTimestampVisible(ts, nowMs) && (!Number.isFinite(chatCloseAt) || (ts ?? 0) <= chatCloseAt);
     const msgs = messages.filter((m) => withinWindow(m.timestamp));
     const visible = (ts, readCount) => isTimestampVisible(ts, nowMs) && (readCount > 0 || !receiptedOnly && typeof ts === "number" && Math.abs(nowMs - ts) <= RECEIPT_FRESH_WINDOW_MS);
+    const voidWindow = submissionChatWindow();
+    const voidAt = receiptedOnly ? submissionChatCloseAt() : nowMs;
+    const isVoidRow = (ts, readCount) => isTimestampVisible(ts, nowMs) && isVoidTimelineItem(ts, readCount, { nowMs: voidAt, receiptedOnly, window: voidWindow });
+    const voidKeys = voidDisplayMessageKeys(messages.map((msg) => ({
+      uid: msg.uid,
+      timestamp: msg.timestamp,
+      text: msg.text,
+      key: state.relay.getMsgKey(msg)
+    })));
+    const voidBadge = () => el("span", { className: "voidBadge", textContent: state.tr("recovery.chat.voidBadge") });
     const rows = [];
     for (const msg of msgs) {
       const self = msg.uid === state.uid;
@@ -72736,7 +73376,8 @@ ${Math.round(plan.beforeBytes / 1024)}KB \u2192 ${Math.round(plan.afterBytes / 1
       const k = msgRefOf(computeMsgKeyV2(state.blockNum, state.groupId, msg));
       const source = !self && visibleReaders ? visibleReaders : readers;
       const readCount = source[k] ? [...source[k]].filter((u) => u !== msg.uid).length : 0;
-      if (!visible(msg.timestamp, readCount)) continue;
+      const isVoid = !visible(msg.timestamp, readCount) && isVoidRow(msg.timestamp, readCount) && voidKeys.has(state.relay.getMsgKey(msg));
+      if (!visible(msg.timestamp, readCount) && !isVoid) continue;
       const avatar = typeof m?.img === "string" && m.img && m.img.length <= 2048 ? el("img", { className: "chatAvatar", src: m.img, alt: "" }) : null;
       const rowEl = el("div", { className: self ? "chatRowSelf" : "chatRow" });
       const wrapB = el("div", { className: "chatBubbleWrapper" });
@@ -72745,7 +73386,11 @@ ${Math.round(plan.beforeBytes / 1024)}KB \u2192 ${Math.round(plan.afterBytes / 1
       bubble.append(el("div", { className: "chatBubbleText", textContent: msg.text }));
       wrapB.append(bubble);
       const timeRow = el("div", { className: "chatBubbleTime" });
-      if (self) {
+      if (isVoid) {
+        rowEl.style.opacity = "0.5";
+        timeRow.append(voidBadge());
+        timeRow.append(" ");
+      } else if (self) {
         if (readCount === 0) rowEl.style.opacity = "0.5";
         timeRow.append(readCount > 0 ? el("span", { className: "readBadge", textContent: state.tr("recovery.chat.readBadge", { count: readCount }) }) : makeUnreadBadge(msg.timestamp));
         timeRow.append(" ");
@@ -72759,21 +73404,21 @@ ${Math.round(plan.beforeBytes / 1024)}KB \u2192 ${Math.round(plan.afterBytes / 1
         if (avatar) rowEl.append(avatar);
         rowEl.append(wrapB);
       }
-      if (!self) {
+      if (!self && !isVoid) {
         const msgKey = state.relay.getMsgKey(msg);
         recoveryShownKeys().add(msgKey);
         rememberRecoveryShownSeparator(msg, msgKey, source[k]);
       }
       rows.push({ ts: msg.timestamp || 0, node: rowEl });
     }
-    const pushAction = (actorUid, actionType, action, nth) => {
+    const pushAction = (actorUid, actionType, action, nth, isVoid = false) => {
       const isSelf = actorUid === state.uid;
       const readCount = actionReadCount(actorUid, actionType, action);
       const actor = byUid.get(actorUid);
       const color = actionType === "vote" ? ACTION_LABEL_COLOR.vote : ACTION_LABEL_COLOR.report;
       const label = actionType === "vote" ? state.tr("recovery.chat.bubbleVote") : state.tr("recovery.chat.bubbleReport", { nth });
       const rowEl = el("div", { className: isSelf ? "chatRowSelf" : "chatRow" });
-      if (isSelf && readCount === 0) rowEl.style.opacity = "0.5";
+      if (isSelf && readCount === 0 || isVoid) rowEl.style.opacity = "0.5";
       const avatar = typeof actor?.img === "string" && actor.img && actor.img.length <= 2048 ? el("img", { className: "chatAvatar", src: actor.img, alt: "" }) : null;
       const wrapB = el("div", { className: "chatBubbleWrapper" });
       if (!isSelf) wrapB.append(el("div", { className: "chatBubbleSender", textContent: memberName(actor) || actorUid, ...receiptedOnly ? {} : recoveryPlayerTitle(actorUid) }));
@@ -72788,7 +73433,10 @@ ${Math.round(plan.beforeBytes / 1024)}KB \u2192 ${Math.round(plan.afterBytes / 1
       bubble.append(textDiv);
       wrapB.append(bubble);
       const timeRow = el("div", { className: "chatBubbleTime" });
-      if (isSelf) {
+      if (isVoid) {
+        timeRow.append(voidBadge());
+        timeRow.append(" ");
+      } else if (isSelf) {
         timeRow.append(readCount > 0 ? el("span", { className: "readBadge", textContent: state.tr("recovery.chat.readBadge", { count: readCount }) }) : makeUnreadBadge(action.timestamp, actionType));
         timeRow.append(" ");
       }
@@ -72803,21 +73451,31 @@ ${Math.round(plan.beforeBytes / 1024)}KB \u2192 ${Math.round(plan.afterBytes / 1
       }
       rows.push({ ts: action.timestamp || 0, node: rowEl });
     };
-    const pushActions = (actorUid, actionType, list) => {
+    const pushActions = (actorUid, actionType, list, suppressVoid = false) => {
       const sorted = (list || []).filter((a) => a?.encrypted && a.timestamp != null && withinWindow(a.timestamp)).sort((a, b) => a.timestamp - b.timestamp);
       let nth = 0;
+      const voidHashes = /* @__PURE__ */ new Set();
       for (const action of sorted) {
         const readCount = actionReadCount(actorUid, actionType, action);
-        if (!visible(action.timestamp, readCount)) continue;
+        if (!visible(action.timestamp, readCount)) {
+          const h = actionHashV2(actionType, state.blockNum, state.groupId, actorUid, action.encrypted, action.timestamp);
+          if (!suppressVoid && !voidHashes.has(h) && isVoidRow(action.timestamp, readCount)) {
+            voidHashes.add(h);
+            pushAction(actorUid, actionType, action, nth + 1, true);
+          }
+          continue;
+        }
         nth += 1;
         pushAction(actorUid, actionType, action, nth);
       }
     };
-    if (state.myVote?.encrypted) pushActions(state.uid, "vote", [state.myVote]);
+    if (state.myVote?.encrypted) pushActions(state.uid, "vote", [state.myVote], ownVoteReceipted());
     pushActions(state.uid, "report", state.myReports);
     for (const [u, v] of Object.entries(state.observedActions.votes || {})) {
       if (u.endsWith("__extras") || u === state.uid) continue;
-      pushActions(u, "vote", [v]);
+      const extras = state.observedActions.votes[`${u}__extras`];
+      const resentValid = Array.isArray(extras) && extras.some((a) => a?.encrypted && a.timestamp != null && actionReadCount(u, "vote", a) > 0);
+      pushActions(u, "vote", [v], resentValid);
     }
     for (const [u, arr] of Object.entries(state.observedActions.reports || {})) {
       if (u === state.uid || !Array.isArray(arr)) continue;
@@ -72968,7 +73626,7 @@ ${Math.round(plan.beforeBytes / 1024)}KB \u2192 ${Math.round(plan.afterBytes / 1
     const capCharsLeft = Math.max(0, chatCaps.maxChars - myCharsRaw);
     const capMessagesLeft = Math.max(0, chatCaps.maxMessages - myMsgCount);
     const hasVoted = !!state.myVote || state.observedP2P.vote;
-    const voteReceipted = state.myVote ? actionReceipted(state.uid, "vote", state.myVote) : false;
+    const voteReceipted = ownVoteReceipted();
     const row = (left, rightText, ok) => {
       const d = el("div", { className: "charCounter" });
       d.append(left);
@@ -73063,11 +73721,12 @@ ${Math.round(plan.beforeBytes / 1024)}KB \u2192 ${Math.round(plan.afterBytes / 1
     const voteTarget = state.intent.vote || decryptSelfTarget(state.myVote?.encrypted);
     const voteVoid = myVoteIsVoid();
     const voteReceiptedNow = !!state.myVote && actionReceipted(state.uid, "vote", state.myVote);
+    const voteSelfVoid = !!state.myVote?.timestamp && !voteReceiptedNow && clientNow2() - state.myVote.timestamp > RECEIPT_FRESH_WINDOW_MS;
     const voteCloseAt = submissionChatCloseAt();
     const cutoff = Number.isSafeInteger(voteCloseAt) ? voteCloseAt - VOTE_RECEIPT_CUTOFF_MS : null;
     const votingClosed = cutoff !== null && clientNow2() >= cutoff;
     for (const m of others) {
-      const isVoted = voteTarget === m.uid && !voteVoid;
+      const isVoted = voteTarget === m.uid && !voteVoid && !voteSelfVoid;
       const voteDisabled = (voteVoid ? m.uid !== voteTarget : !!state.myVote || state.observedP2P.vote) || votingClosed;
       const resendSuffix = voteVoid && m.uid === voteTarget ? ` (${state.tr("recovery.action.resendLabel")})` : "";
       voteBtns.append(el("button", {
@@ -73082,7 +73741,7 @@ ${Math.round(plan.beforeBytes / 1024)}KB \u2192 ${Math.round(plan.afterBytes / 1
       }));
     }
     voteSec.append(voteBtns);
-    if (state.myVote) voteSec.append(receiptStatusRow(actionReceipted(state.uid, "vote", state.myVote)));
+    if (state.myVote) voteSec.append(receiptStatusRow(ownVoteReceipted()));
     panel.append(voteSec);
     const repSec = el("div", { className: "actionSection" });
     repSec.append(el("div", { className: "actionTitle", textContent: state.tr("recovery.action.reportTitle") }));
